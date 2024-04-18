@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 300;
+  font-size: 2vw;
 }
 
 .shape {
@@ -49,5 +50,10 @@
     font-weight: bold; /* 폰트 굵기 설정 */
     color: #333; /* 원하는 폰트 색상으로 설정 */
     padding-right: 20%;
+  }
+
+  .loader {
+    font-weight: 300;
+    font-size: 2vw;
   }
 }

@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bolder;
-  font-size: 5vw;
+  font-weight: 300;
+  font-size: 2vw;
 }
 
 .container {
@@ -63,7 +63,8 @@
 
 @media screen and (max-width: 1090px) {
   .loader {
-    font-size: 5vw;
+    font-weight: 300;
+    font-size: 2vw;
   }
 
   .container {
