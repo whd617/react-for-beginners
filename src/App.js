@@ -8,7 +8,6 @@ function App() {
       <Routes>
         <Route
           path={`${process.env.PUBLIC_URL}/movie/:id`}
-          basename={process.env.PUBLIC_URL}
           element={<Detail />}
         ></Route>
         <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}></Route>

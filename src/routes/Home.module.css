@@ -1,0 +1,53 @@
+.container {
+  height: 100%; /* 화면 전체 높이를 차지하도록 설정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+}
+
+.shape {
+  background-color: yellow;
+  position: absolute;
+  height: 100px;
+}
+
+.describe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
+  border-radius: 10px;
+  grid-gap: 50px;
+  padding: 0;
+  margin: auto; /* 가운데 정렬을 위해 margin을 auto로 설정 */
+  max-width: 80%; /* 최대 너비를 80%로 제한 */
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1090px) {
+  .movies {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .title > div {
+    font-size: 3vw; /* 원하는 폰트 크기로 설정 */
+    font-weight: bold; /* 폰트 굵기 설정 */
+    color: #333; /* 원하는 폰트 색상으로 설정 */
+    padding-right: 20%;
+  }
+}
